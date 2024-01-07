@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>home page</title>
+</head>
+<body>
+    
+<section class="caro">
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img/111.gif" >
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="img/222.gif" >      
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="img/333.gif" >
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="img/444.gif" >
+    </div>
+
+      <div class="mySlides fade">
+        <img src="img/555.gif">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/666.gif" >
+      </div>
+
+
+    <!-- Next and previous buttons -->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br> -->
+  
+  <!-- The dots/circles -->
+  <div class="last">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+
+  </div>
+</section>
+
+<section class="GRID">
+
+  <div class="box">
+      <div class="item item1">
+          <img src="img/notes_img.png" alt="">
+          NOTES
+        </div>
+      <div class="item item2">
+          <img src="img/1.png" alt="">
+          Class 9th
+      </div>
+      <div class="item item3">
+        <img src="img/2.png" alt="">
+        Class 10th
+      </div>
+      <div class="item item4">
+        <img src="img/3.png" alt="">
+        Class 11th
+      </div>
+      <div class="item item5">
+        <img src="img/4.png" alt="">
+        Class 12th
+      </div>
+      
+  </div>
+
+</section>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+</script>
+
+</body>
+</html>
